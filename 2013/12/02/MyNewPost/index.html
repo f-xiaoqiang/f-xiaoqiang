@@ -68,15 +68,11 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="nodejs," />
 
 
 
 
-  
-
-
-  <link rel="alternate" href="/atom.xml" title="f_xiaoqiang a day" type="application/atom+xml" />
 
 
 
@@ -88,16 +84,16 @@
 
 
 
-<meta name="description" content="这里开始使用markdown格式输入你的正文。">
+<meta name="description" content="12345678910111213//导入了一个内部http模块var http = require(&amp;quot;http&amp;quot;);function onRequest(request, response) &amp;#123;  console.log(&amp;quot;Request received.&amp;quot;);  response.writeHead(200, &amp;#123;&amp;quot;Cont">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MyNewPost">
+<meta property="og:title" content="nodejs 初步">
 <meta property="og:url" content="http://yoursite.com/2013/12/02/MyNewPost/index.html">
 <meta property="og:site_name" content="f_xiaoqiang a day">
-<meta property="og:description" content="这里开始使用markdown格式输入你的正文。">
-<meta property="og:updated_time" content="2016-06-02T16:24:18.710Z">
+<meta property="og:description" content="12345678910111213//导入了一个内部http模块var http = require(&amp;quot;http&amp;quot;);function onRequest(request, response) &amp;#123;  console.log(&amp;quot;Request received.&amp;quot;);  response.writeHead(200, &amp;#123;&amp;quot;Cont">
+<meta property="og:updated_time" content="2016-06-14T16:56:34.887Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MyNewPost">
-<meta name="twitter:description" content="这里开始使用markdown格式输入你的正文。">
+<meta name="twitter:title" content="nodejs 初步">
+<meta name="twitter:description" content="12345678910111213//导入了一个内部http模块var http = require(&amp;quot;http&amp;quot;);function onRequest(request, response) &amp;#123;  console.log(&amp;quot;Request received.&amp;quot;);  response.writeHead(200, &amp;#123;&amp;quot;Cont">
 
 
 
@@ -115,7 +111,7 @@
   };
 </script>
 
-  <title> MyNewPost | f_xiaoqiang a day </title>
+  <title> nodejs 初步 | f_xiaoqiang a day </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -178,6 +174,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -194,6 +200,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -235,7 +251,7 @@
             
             
               
-                MyNewPost
+                nodejs 初步
               
             
           </h1>
@@ -275,7 +291,8 @@
       
 
       
-        <p>这里开始使用markdown格式输入你的正文。</p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//导入了一个内部http模块</span><br><span class="line">var http = require(&quot;http&quot;);</span><br><span class="line"></span><br><span class="line">function onRequest(request, response) &#123;</span><br><span class="line">  console.log(&quot;Request received.&quot;);</span><br><span class="line">  response.writeHead(200, &#123;&quot;Content-Type&quot;: &quot;text/plain&quot;&#125;);</span><br><span class="line">  response.write(&quot;Hello World&quot;);</span><br><span class="line">  response.end();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">http.createServer(onRequest).listen(8888);</span><br><span class="line"></span><br><span class="line">console.log(&quot;Server has started.&quot;);</span><br></pre></td></tr></table></figure>
+<p>####<code>事件驱动</code>的<code>异步</code>服务器端JavaScript和它的<code>回调</code><br>    1.运行node sever.js 启动服务器时，直接打印 <code>Server has started.</code><br>    2.http对象调用了createServer函数中的监听方法<code>listen</code>监听8888端口<br>    3.当浏览器访问 <a href="http://localhost:8888/" target="_blank" rel="external">http://localhost:8888/</a> 时异步触发  listen 。这时调用了函数 <code>onRequest</code>  这就是回调。</p>
 
       
     </div>
@@ -295,21 +312,13 @@
 
     <footer class="post-footer">
       
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/06/02/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
+        <div class="post-tags">
+          
+            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
+          
         </div>
+      
+
       
 
       
@@ -366,7 +375,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="http://img.boqiicdn.com/Data/Bbs/Users/1159/115913/11591326/img66871414741845_thumb.jpg"
                alt="zwq" />
           <p class="site-author-name" itemprop="name">zwq</p>
           <p class="site-description motion-element" itemprop="description">学习总结 思考感悟 知识管理</p>
@@ -374,7 +383,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -382,19 +391,49 @@
           
 
           
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/" target="_blank" title="GitHub">
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/" target="_blank" title="Twitter">
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/" target="_blank" title="微博">
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/" target="_blank" title="豆瓣">
+                  
+                  豆瓣
+                </a>
+              </span>
+            
           
         </div>
 
@@ -402,6 +441,24 @@
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.phptext.net/" title="phptext" target="_blank">phptext</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.dazhiqiao.com/" title="大致乔" target="_blank">大致乔</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
